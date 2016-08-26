@@ -1,0 +1,26 @@
+Package: linux-image-3.9.0-rc1
+Source: linux-source-3.9.0-rc1
+Version: 0.kvm.1
+Architecture: amd64
+Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
+Installed-Size: 124529
+Pre-Depends: debconf (>= 0.2.17) | debconf-2.0
+Depends: coreutils (>= 5.96)
+Suggests: fdutils, linux-doc-3.9.0-rc1 | linux-source-3.9.0-rc1, ksymoops, linux-image-3.9.0-rc1-dbg
+Provides: linux-image, linux-image-3.9
+Section: kernel
+Priority: optional
+Description: Linux kernel binary image for version 3.9.0-rc1
+ This package contains the Linux kernel image for version
+ 3.9.0-rc1.
+ .
+ It also contains the corresponding System.map file, and the modules
+ built by the packager.  It also contains scripts that try to ensure
+ that the system is not left in a unbootable state after an update.
+ .
+ Kernel image packages are generally produced using kernel-package,
+ and it is suggested that you install that package if you wish to
+ create a custom kernel from the sources. Please look at kernel-img.conf(5),
+ and /usr/share/doc/kernel-package/README.gz  from the package kernel-package
+ for details on how to tailor the  installation of this or any other kernel
+ image package
